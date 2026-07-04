@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon } from "lucide-react";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Python } from "@/components/ui/svgs/python";
+import { HomeIcon, FolderOpenIcon, Database, Globe } from "lucide-react";
+import { SiPython, SiJavascript, SiDjango, SiHtml5, SiCss, SiBootstrap, SiFlutter, SiPostgresql, SiMysql, SiMongodb, SiGit, SiGithub, SiPostman, SiFirebase, SiRailway, SiVercel } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export const DATA = {
   name: "Akkshaya Kumar R V",
@@ -12,33 +12,36 @@ export const DATA = {
   description:
     "Software Engineering Student building backend systems, fintech workflows, and practical full-stack products.",
   intro:
-    "I'm an Information Technology student at SSN College of Engineering, Chennai, with a strong interest in backend engineering, scalable application design, and real-world software systems. I enjoy building products that go beyond basic CRUD apps — from fintech-style workflow systems and role-based admin platforms to public-service and accessibility-focused applications.\n\nCurrently, I'm focused on strengthening my backend fundamentals through Django, REST APIs, database design, authentication systems, and production-style engineering practices. I'm especially interested in systems where correctness, maintainability, and operational clarity matter — such as finance, internal tools, and workflow automation.",
+    "",
   summary:
     "I'm a second-year IT student at [SSN College of Engineering, Chennai](#education), and I enjoy building software that solves practical problems with clean engineering. My work so far has ranged from full-stack and mobile applications to backend systems involving authentication, role-based access control, bulk operations, dashboards, and workflow design.\n\nI'm particularly interested in backend-heavy systems and engineering problems that sit at the intersection of software design and business logic — such as loan workflows, internal admin tools, notification systems, and public-service applications. I like thinking through how software behaves in real usage: who is allowed to do what, how data should flow between components, how APIs should scale, and how systems can remain maintainable as requirements grow.\n\nOutside of coursework, I've worked on hackathon products, internship projects, and independent builds that helped me learn by doing. I care about writing code that is understandable, extensible, and useful — not just functional.",
   avatarUrl: "/Akkshay.jpeg",
   skills: [
-    { name: "Java" },
-    { name: "Python", icon: Python },
-    { name: "JavaScript" },
-    { name: "SQL" },
-    { name: "Django" },
-    { name: "Django REST Framework" },
-    { name: "REST APIs" },
-    { name: "HTML" },
-    { name: "CSS" },
-    { name: "Bootstrap" },
-    { name: "Flutter" },
-    { name: "PostgreSQL", icon: Postgresql },
-    { name: "MySQL" },
-    { name: "MongoDB" },
-    { name: "Git" },
-    { name: "GitHub" },
-    { name: "Postman" },
-    { name: "Firebase" },
-    { name: "Railway" },
-    { name: "Vercel" },
+    { name: "Java", icon: FaJava },
+    { name: "Python", icon: SiPython },
+    { name: "JavaScript", icon: SiJavascript },
+    { name: "SQL", icon: Database },
+    { name: "Django", icon: SiDjango },
+    { name: "Django REST Framework", icon: SiDjango },
+    { name: "REST APIs", icon: Globe },
+    { name: "HTML", icon: SiHtml5 },
+    { name: "CSS", icon: SiCss },
+    { name: "Bootstrap", icon: SiBootstrap },
+    { name: "Flutter", icon: SiFlutter },
+    { name: "PostgreSQL", icon: SiPostgresql },
+    { name: "MySQL", icon: SiMysql },
+    { name: "MongoDB", icon: SiMongodb },
+    { name: "Git", icon: SiGit },
+    { name: "GitHub", icon: SiGithub },
+    { name: "Postman", icon: SiPostman },
+    { name: "Firebase", icon: SiFirebase },
+    { name: "Railway", icon: SiRailway },
+    { name: "Vercel", icon: SiVercel },
   ],
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "#projects", icon: FolderOpenIcon, label: "Projects" },
+  ],
   contact: {
     email: "akkshay0312@gmail.com",
     tel: "",
@@ -104,7 +107,10 @@ export const DATA = {
         "PostgreSQL",
         "JWT",
       ],
-      links: [],
+      links: [
+        { type: "Website", href: "#", icon: <Globe className="size-3" /> },
+        { type: "Source", href: "https://github.com/akki0312-tech", icon: <Icons.github className="size-3" /> },
+      ],
       image: "",
       video: "",
     },
@@ -116,7 +122,10 @@ export const DATA = {
       description:
         "A hackathon project aimed at improving access to public distribution services by reducing friction for end users through mobile and IVR-based interactions.\n\n- Helped build a system concept that combines mobile workflows with accessible service interactions.\n- Worked on product logic and application structure around ration distribution use cases.\n- Contributed to a practical system intended for real users rather than a purely demo-oriented prototype.",
       technologies: ["Flutter", "Firebase", "Dialogflow CX"],
-      links: [],
+      links: [
+        { type: "Website", href: "#", icon: <Globe className="size-3" /> },
+        { type: "Source", href: "https://github.com/akki0312-tech", icon: <Icons.github className="size-3" /> },
+      ],
       image: "",
       video: "",
     },
@@ -128,7 +137,10 @@ export const DATA = {
       description:
         "A frontend-focused project built to explore user experience, interface structure, and feature design in a consumer-facing web application.\n\n- Built responsive UI screens and interactive sections for a food delivery experience.\n- Explored feature ideas such as item discovery, customization flows, support access, and user-friendly navigation.\n- Used the project as a foundation for understanding how product features and frontend behavior come together in real applications.",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      links: [],
+      links: [
+        { type: "Website", href: "#", icon: <Globe className="size-3" /> },
+        { type: "Source", href: "https://github.com/akki0312-tech", icon: <Icons.github className="size-3" /> },
+      ],
       image: "",
       video: "",
     },
