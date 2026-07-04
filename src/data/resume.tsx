@@ -40,7 +40,7 @@ export const DATA = {
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
-    email: "akkshaya@example.com",
+    email: "akkshay0312@gmail.com",
     tel: "",
     message:
       "I'm currently focused on software engineering internships and backend/full-stack opportunities where I can work on real systems, learn from strong teams, and contribute meaningfully to product development.\n\nIf you'd like to discuss a project, internship opportunity, or engineering collaboration, feel free to reach out.",
@@ -59,7 +59,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "mailto:akkshaya@example.com",
+        url: "mailto:akkshay0312@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
