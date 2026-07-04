@@ -23,6 +23,7 @@ const PAGE_SIZE = 5;
 const BLUR_FADE_DELAY = 0.04;
 
 export default async function BlogPage() {
+  const pageParam = "1";
   const posts = allPosts;
   const sortedPosts = [...posts].sort((a, b) => {
     if (new Date(a.publishedAt) > new Date(b.publishedAt)) {

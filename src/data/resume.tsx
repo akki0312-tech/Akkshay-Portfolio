@@ -1,6 +1,7 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { Python } from "@/components/ui/svgs/python";
 
 export const DATA = {
   name: "Akkshaya Kumar R V",
