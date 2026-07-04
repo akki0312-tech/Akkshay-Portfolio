@@ -174,4 +174,24 @@ export const DATA = {
       links: [],
     },
   ],
+  certifications: [
+    {
+      title: "Generative AI Leader",
+      image: "/Generative AI Leader.jpg",
+      issuer: "",
+      date: "2024",
+    },
+    {
+      title: "Introduction to Industry 4.0 and Industrial Internet of Things",
+      image: "/Introduction to industry 4.0 and industrial internet of things.jpg",
+      issuer: "",
+      date: "2024",
+    },
+    {
+      title: "Prompt Engineering by IBM",
+      image: "/Prompt Engineering by IBM.jpg",
+      issuer: "IBM",
+      date: "2024",
+    },
+  ],
 } as const;

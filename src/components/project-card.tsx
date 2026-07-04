@@ -17,7 +17,7 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
 
   return (
     <img
-      src={src}
+      src={src?.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${src}` : src}
       alt={alt}
       className="w-full h-48 object-cover"
       onError={() => setImageError(true)}
