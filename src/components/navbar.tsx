@@ -19,9 +19,9 @@ export default function Navbar() {
             <Tooltip key={item.href}>
               <TooltipTrigger asChild>
                 <a
-                  href={item.href}
-                  target={isExternal ? "_blank" : undefined}
-                  rel={isExternal ? "noopener noreferrer" : undefined}
+                  href={item.href.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${item.href}` : item.href}
+                  target={isExternal || item.href.endsWith(".pdf") ? "_blank" : undefined}
+                  rel={isExternal || item.href.endsWith(".pdf") ? "noopener noreferrer" : undefined}
                 >
                   <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted backdrop-blur-3xl border border-border transition-colors">
                     <item.icon className="size-full rounded-sm overflow-hidden object-contain" />

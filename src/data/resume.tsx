@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, FolderOpenIcon, Database, Globe } from "lucide-react";
+import { HomeIcon, FolderOpenIcon, Database, Globe, FileTextIcon } from "lucide-react";
 import { SiPython, SiJavascript, SiDjango, SiHtml5, SiCss, SiBootstrap, SiFlutter, SiPostgresql, SiMysql, SiMongodb, SiGit, SiGithub, SiPostman, SiFirebase, SiRailway, SiVercel } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
@@ -41,6 +41,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "#projects", icon: FolderOpenIcon, label: "Projects" },
+    { href: "/Akkshay-Resume.pdf", icon: FileTextIcon, label: "Resume" },
   ],
   contact: {
     email: "akkshay0312@gmail.com",
