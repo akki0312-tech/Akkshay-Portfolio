@@ -22,7 +22,7 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 
   return (
     <img
-      src={src}
+      src={src?.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${src}` : src}
       alt={alt}
       className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
       onError={() => setImageError(true)}

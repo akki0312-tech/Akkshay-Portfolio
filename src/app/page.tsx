@@ -41,7 +41,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage alt={DATA.name} src={DATA.avatarUrl?.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${DATA.avatarUrl}` : DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -92,7 +92,7 @@ export default function Page() {
                   <div className="flex items-center gap-x-3 flex-1 min-w-0">
                     {education.logoUrl ? (
                       <img
-                        src={education.logoUrl}
+                        src={education.logoUrl?.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${education.logoUrl}` : education.logoUrl}
                         alt={education.school}
                         className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
                       />
