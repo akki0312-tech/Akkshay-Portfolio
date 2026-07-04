@@ -31,6 +31,13 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              {"intro" in DATA && DATA.intro && (
+                <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                  <div className="prose max-w-full text-pretty font-sans text-sm leading-relaxed text-muted-foreground dark:prose-invert md:text-base">
+                    <Markdown>{DATA.intro}</Markdown>
+                  </div>
+                </BlurFade>
+              )}
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
@@ -58,7 +65,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <h2 className="text-xl font-bold">Experience</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <WorkSection />

@@ -22,13 +22,7 @@ export const metadata: Metadata = {
 const PAGE_SIZE = 5;
 const BLUR_FADE_DELAY = 0.04;
 
-export default async function BlogPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ page?: string }>;
-}) {
-  const { page: pageParam } = await searchParams;
-
+export default async function BlogPage() {
   const posts = allPosts;
   const sortedPosts = [...posts].sort((a, b) => {
     if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
