@@ -15,7 +15,7 @@ export const DATA = {
     "I'm an Information Technology student at SSN College of Engineering, Chennai, with a strong interest in backend engineering, scalable application design, and real-world software systems. I enjoy building products that go beyond basic CRUD apps — from fintech-style workflow systems and role-based admin platforms to public-service and accessibility-focused applications.\n\nCurrently, I'm focused on strengthening my backend fundamentals through Django, REST APIs, database design, authentication systems, and production-style engineering practices. I'm especially interested in systems where correctness, maintainability, and operational clarity matter — such as finance, internal tools, and workflow automation.",
   summary:
     "I'm a second-year IT student at [SSN College of Engineering, Chennai](#education), and I enjoy building software that solves practical problems with clean engineering. My work so far has ranged from full-stack and mobile applications to backend systems involving authentication, role-based access control, bulk operations, dashboards, and workflow design.\n\nI'm particularly interested in backend-heavy systems and engineering problems that sit at the intersection of software design and business logic — such as loan workflows, internal admin tools, notification systems, and public-service applications. I like thinking through how software behaves in real usage: who is allowed to do what, how data should flow between components, how APIs should scale, and how systems can remain maintainable as requirements grow.\n\nOutside of coursework, I've worked on hackathon products, internship projects, and independent builds that helped me learn by doing. I care about writing code that is understandable, extensible, and useful — not just functional.",
-  avatarUrl: "",
+  avatarUrl: "/Akkshay.jpeg",
   skills: [
     { name: "Java" },
     { name: "Python", icon: Python },
@@ -47,7 +47,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/",
+        url: "https://github.com/akki0312-tech",
         icon: Icons.github,
         navbar: true,
       },
@@ -73,7 +73,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Software Developer Intern",
-      logoUrl: "",
+      logoUrl: "/datamoo-logo.jpg",
       start: "June 2026",
       end: "Present",
       description:
@@ -85,7 +85,7 @@ export const DATA = {
       school: "SSN College of Engineering",
       href: "https://www.ssn.edu.in/",
       degree: "B.Tech in Information Technology",
-      logoUrl: "",
+      logoUrl: "/ssn-logo.jpg",
       start: "2024",
       end: "2028",
     },
