@@ -117,9 +117,9 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "ByteZee - Food delivery website",
-      href: "https://akki0312-tech.github.io/ByteZee/",
-      dates: "2024",
+      title: "Loan Management System Backend",
+      href: "#",
+      dates: "2025 - Present",
       active: true,
       description:
         "A backend-heavy fintech-style workflow system designed around multi-role operations, structured data flows, and operational management features.\n\n- Designed and implemented backend APIs for workflow-driven modules.\n- Worked with JWT-based authentication and role-aware access flows.\n- Built support for filtering, search, and dashboard-style aggregate requirements.\n- Thought through backend concerns such as maintainability, access control, and scaling behavior for real usage.",
@@ -130,10 +130,10 @@ export const DATA = {
         "JWT",
       ],
       links: [
-        { type: "Website", href: "https://akki0312-tech.github.io/ByteZee/", icon: <Globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/akki0312-tech/ByteZee.git", icon: <Icons.github className="size-3" /> },
+        { type: "Website", href: "#", icon: <Globe className="size-3" /> },
+        { type: "Source", href: "https://github.com/akki0312-tech", icon: <Icons.github className="size-3" /> },
       ],
-      image: "/bytezee.png",
+      image: "",
       video: "",
     },
     {
@@ -151,18 +151,18 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Food Delivery Website",
-      href: "#",
+      title: "ByteZee - Food delivery website",
+      href: "https://akki0312-tech.github.io/ByteZee/",
       dates: "2024",
       active: true,
       description:
         "A frontend-focused project built to explore user experience, interface structure, and feature design in a consumer-facing web application.\n\n- Built responsive UI screens and interactive sections for a food delivery experience.\n- Explored feature ideas such as item discovery, customization flows, support access, and user-friendly navigation.\n- Used the project as a foundation for understanding how product features and frontend behavior come together in real applications.",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       links: [
-        { type: "Website", href: "#", icon: <Globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/akki0312-tech", icon: <Icons.github className="size-3" /> },
+        { type: "Website", href: "https://akki0312-tech.github.io/ByteZee/", icon: <Globe className="size-3" /> },
+        { type: "Source", href: "https://github.com/akki0312-tech/ByteZee.git", icon: <Icons.github className="size-3" /> },
       ],
-      image: "",
+      image: "/bytezee.png",
       video: "",
     },
   ],
