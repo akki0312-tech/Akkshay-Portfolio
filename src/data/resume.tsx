@@ -14,29 +14,49 @@ export const DATA = {
   intro:
     "",
   summary:
-    "I'm a second-year IT student at [SSN College of Engineering, Chennai](#education), and I enjoy building software that solves practical problems with clean engineering. My work so far has ranged from full-stack and mobile applications to backend systems involving authentication, role-based access control, bulk operations, dashboards, and workflow design.\n\nI'm particularly interested in backend-heavy systems and engineering problems that sit at the intersection of software design and business logic — such as loan workflows, internal admin tools, notification systems, and public-service applications. I like thinking through how software behaves in real usage: who is allowed to do what, how data should flow between components, how APIs should scale, and how systems can remain maintainable as requirements grow.\n\nOutside of coursework, I've worked on hackathon products, internship projects, and independent builds that helped me learn by doing. I care about writing code that is understandable, extensible, and useful — not just functional.",
+    "I’m Akkshay, an IT student at SSN College of Engineering who likes building software that feels useful, scalable, and just a little over-engineered in the fun way. Most of my time goes into backend systems, full-stack projects, and figuring out how real products should behave once actual users, messy workflows, and edge cases enter the picture.\n\nLately, I’ve been spending a lot of time working with Django, REST APIs, databases, authentication flows, and role-based systems, while also exploring how to build products that are clean on the inside and intuitive on the outside. I’m especially drawn to projects where software has to do more than just “work” — things like fintech workflows, admin systems, internal tools, and apps built around real-world constraints.\n\nWhen I’m not coding, I’m usually thinking about how to make systems better, cleaner, or faster than they strictly need to be, which is probably why I enjoy debugging architecture decisions almost as much as building features. Right now, I’m focused on becoming a stronger backend/full-stack engineer, building projects I’d actually be proud to talk about in an interview, and learning the kind of engineering that holds up outside tutorial land.",
   avatarUrl: "/Akkshay.jpeg",
   skills: [
-    { name: "Java", icon: FaJava },
-    { name: "Python", icon: SiPython },
-    { name: "JavaScript", icon: SiJavascript },
-    { name: "SQL", icon: Database },
-    { name: "Django", icon: SiDjango },
-    { name: "Django REST Framework", icon: SiDjango },
-    { name: "REST APIs", icon: Globe },
-    { name: "HTML", icon: SiHtml5 },
-    { name: "CSS", icon: SiCss },
-    { name: "Bootstrap", icon: SiBootstrap },
-    { name: "Flutter", icon: SiFlutter },
-    { name: "PostgreSQL", icon: SiPostgresql },
-    { name: "MySQL", icon: SiMysql },
-    { name: "MongoDB", icon: SiMongodb },
-    { name: "Git", icon: SiGit },
-    { name: "GitHub", icon: SiGithub },
-    { name: "Postman", icon: SiPostman },
-    { name: "Firebase", icon: SiFirebase },
-    { name: "Railway", icon: SiRailway },
-    { name: "Vercel", icon: SiVercel },
+    {
+      category: "Languages",
+      items: [
+        { name: "Java", icon: FaJava },
+        { name: "Python", icon: SiPython },
+        { name: "JavaScript", icon: SiJavascript },
+        { name: "SQL", icon: Database },
+        { name: "HTML", icon: SiHtml5 },
+        { name: "CSS", icon: SiCss },
+      ]
+    },
+    {
+      category: "Frameworks & APIs",
+      items: [
+        { name: "Django", icon: SiDjango },
+        { name: "Django REST Framework", icon: SiDjango },
+        { name: "REST APIs", icon: Globe },
+        { name: "Bootstrap", icon: SiBootstrap },
+        { name: "Flutter", icon: SiFlutter },
+      ]
+    },
+    {
+      category: "Databases",
+      items: [
+        { name: "PostgreSQL", icon: SiPostgresql },
+        { name: "MySQL", icon: SiMysql },
+        { name: "MongoDB", icon: SiMongodb },
+      ]
+    },
+    {
+      category: "Tools & Platforms",
+      items: [
+        { name: "Git", icon: SiGit },
+        { name: "GitHub", icon: SiGithub },
+        { name: "Postman", icon: SiPostman },
+        { name: "Firebase", icon: SiFirebase },
+        { name: "Railway", icon: SiRailway },
+        { name: "Vercel", icon: SiVercel },
+      ]
+    }
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -79,9 +99,9 @@ export const DATA = {
       title: "Software Developer Intern",
       logoUrl: "/datamoo-logo.jpg",
       start: "June 2026",
-      end: "Present",
+      end: "July 2026",
       description:
-        "Worked on backend engineering tasks for an internal loan management / workflow-oriented system, with a focus on API development, data handling, and role-aware application logic.\n\n- Built and extended backend APIs using Django and Django REST Framework for operational workflows.\n- Worked on authentication, structured data handling, filtering/search features, and dashboard-related backend tasks.\n- Explored role-based access patterns and backend design considerations for multi-user systems involving admins, managers, and operational users.\n- Contributed to practical engineering tasks such as API design, model relationships, serializer logic, and workflow-oriented backend features.",
+        "- Developed backend APIs for a **Loan Management System** using **Django** and **Django REST Framework**, supporting internal workflows and data-driven operational features.\n- Implemented **JWT authentication and custom token logic**, enabling secure access control and user-specific workflow handling across the application.\n- Built **CRUD, filtering, and search endpoints** for core modules, improving data management and usability for internal stakeholders.\n- Worked on **bulk API operations, dashboard aggregates, and reporting-oriented endpoints** to support high-volume data handling and business visibility.\n- Explored backend design patterns for **role-based access control, scalable API design, and maintainable system architecture** in a multi-role environment.",
     },
   ],
   education: [
@@ -92,6 +112,7 @@ export const DATA = {
       logoUrl: "/ssn-logo.jpg",
       start: "2024",
       end: "2028",
+      description: "- Core Commitee member at ProCoDe IT SSN\n- Technical Member at SSN MUN Society\n- Editorial Member at IEEECS",
     },
   ],
   projects: [
