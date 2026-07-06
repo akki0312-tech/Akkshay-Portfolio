@@ -112,7 +112,7 @@ export const DATA = {
       logoUrl: "/ssn-logo.jpg",
       start: "2024",
       end: "2028",
-      description: "- Core Commitee member at ProCoDe IT SSN\n- Technical Member at SSN MUN Society\n- Editorial Member at IEEECS\n\n**Relevant Coursework:** Problem Solving & Python Programming · Programming in C & Data Structures · Introduction to Web Programming · ObjectOriented Programming using Java · Database Technology · Principles of Software Engineering & Practices · Digital Systems & Microprocessors Design · Introduction to Digital Communication · Pattern Recognition & Machine Learning · Data Analytics & Visualization · Advanced Data Structures & Algorithm Analysis · Signal Processing for Machine Learning · Data Communication & Networks · Computer Organization",
+      description: "**Core Committee Member**\n*ProCode IT SSN* (May 2026 - Present)\n\n**Member of Tech team**\n*SSN-SNUC MUN Society* (May 2026 - Present)\n\n**SSN IEEE Computer Society**\n* **Editorial Team Member** (Mar 2026 - Present)\n* **Student Volunteer** (Sep 2025 - Mar 2026)\n\n**Relevant Coursework:** Problem Solving & Python Programming · Programming in C & Data Structures · Introduction to Web Programming · ObjectOriented Programming using Java · Database Technology · Principles of Software Engineering & Practices · Digital Systems & Microprocessors Design · Introduction to Digital Communication · Pattern Recognition & Machine Learning · Data Analytics & Visualization · Advanced Data Structures & Algorithm Analysis · Signal Processing for Machine Learning · Data Communication & Networks · Computer Organization",
     },
   ],
   projects: [
