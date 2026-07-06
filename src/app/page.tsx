@@ -35,23 +35,23 @@ export default function Page() {
                 text={DATA.description}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 1.5}>
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4 text-sm font-medium text-muted-foreground">
-                  <div className="flex items-center gap-1.5">
-                    <MapPinIcon className="size-4" />
+                <div className="flex flex-row flex-wrap items-center gap-y-2 gap-x-4 mt-4 text-sm font-medium text-muted-foreground">
+                  <div className="flex items-center gap-1.5 whitespace-nowrap">
+                    <MapPinIcon className="size-4 shrink-0" />
                     <span>Bangalore / Chennai</span>
                   </div>
                   <div className="hidden sm:block text-muted/30">•</div>
-                  <div className="flex items-center gap-4">
-                    <Link href={DATA.contact.social.GitHub.url} target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
-                      <Icons.github className="size-4" />
+                  <div className="flex flex-row flex-wrap items-center gap-4">
+                    <Link href={DATA.contact.social.GitHub.url} target="_blank" className="flex items-center gap-1.5 whitespace-nowrap hover:text-foreground transition-colors">
+                      <Icons.github className="size-4 shrink-0" />
                       <span>GitHub</span>
                     </Link>
-                    <Link href={DATA.contact.social.LinkedIn.url} target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
-                      <Icons.linkedin className="size-4" />
+                    <Link href={DATA.contact.social.LinkedIn.url} target="_blank" className="flex items-center gap-1.5 whitespace-nowrap hover:text-foreground transition-colors">
+                      <Icons.linkedin className="size-4 shrink-0" />
                       <span>LinkedIn</span>
                     </Link>
-                    <Link href={DATA.navbar.find(n => n.label === "Resume")?.href || "/Akkshay-Resume.pdf"} target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
-                      <FileTextIcon className="size-4" />
+                    <Link href={DATA.navbar.find(n => n.label === "Resume")?.href || "/Akkshay-Resume.pdf"} target="_blank" className="flex items-center gap-1.5 whitespace-nowrap hover:text-foreground transition-colors">
+                      <FileTextIcon className="size-4 shrink-0" />
                       <span>Resume</span>
                     </Link>
                   </div>
@@ -155,6 +155,12 @@ export default function Page() {
           <ContactSection />
         </BlurFade>
       </section>
+
+      <footer className="w-full flex items-center justify-center py-8">
+        <p className="text-sm text-muted-foreground/80">
+          © {new Date().getFullYear()} {DATA.name}. All rights reserved.
+        </p>
+      </footer>
     </main>
   );
 }

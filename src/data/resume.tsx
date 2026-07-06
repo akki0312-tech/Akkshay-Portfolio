@@ -160,10 +160,9 @@ export const DATA = {
         "JWT",
       ],
       links: [
-        { type: "Website", href: "#", icon: <Globe className="size-3" /> },
-        { type: "Source", href: "https://github.com/akki0312-tech", icon: <Icons.github className="size-3" /> },
+        { type: "Source", href: "https://github.com/akki0312-tech/Loan-management-System.git", icon: <Icons.github className="size-3" /> },
       ],
-      image: "",
+      image: "/lms.png",
       video: "",
     },
     {
@@ -237,6 +236,12 @@ export const DATA = {
     },
   ],
   certifications: [
+    {
+      title: "Certified abacus Grandmaster",
+      image: "/abacus.png",
+      issuer: "Recognized for excellence in mental arithmetic and abacus proficiency",
+      date: "",
+    },
     {
       title: "Generative AI Leader",
       image: "/Generative AI Leader.jpg",
