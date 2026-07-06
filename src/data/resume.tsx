@@ -15,7 +15,7 @@ export const DATA = {
     "",
   summary:
     "I’m Akkshay, an IT student at SSN College of Engineering who likes building software that feels useful, scalable, and just a little over-engineered in the fun way. Most of my time goes into backend systems, full-stack projects, and figuring out how real products should behave once actual users, messy workflows, and edge cases enter the picture.\n\nLately, I’ve been spending a lot of time working with Django, REST APIs, databases, authentication flows, and role-based systems, while also exploring how to build products that are clean on the inside and intuitive on the outside. I’m especially drawn to projects where software has to do more than just “work” — things like fintech workflows, admin systems, internal tools, and apps built around real-world constraints.\n\nWhen I’m not coding, I’m usually thinking about how to make systems better, cleaner, or faster than they strictly need to be, which is probably why I enjoy debugging architecture decisions almost as much as building features. Right now, I’m focused on becoming a stronger backend/full-stack engineer, building projects I’d actually be proud to talk about in an interview, and learning the kind of engineering that holds up outside tutorial land.",
-  avatarUrl: "/akkshay-cool.heic",
+  avatarUrl: "/akkshay-cool.jpg",
   skills: [
     {
       category: "Languages",
