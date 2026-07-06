@@ -165,6 +165,20 @@ export const DATA = {
       image: "/bytezee.png",
       video: "",
     },
+    {
+      title: "FraudLens",
+      href: "https://github.com/Shravanthi-D/SAR-AI-Narrative-Generator.git",
+      dates: "Hackathon Project",
+      active: true,
+      description:
+        "- Built an AI-powered narrative generation system that transformed structured financial / reporting data into human-readable summaries, reducing manual report-writing effort by ~60–70% for repetitive narrative tasks.\n- Designed a pipeline to process 100+ structured records per run and generate context-aware narratives for business / reporting workflows with consistent formatting and clearer stakeholder communication.\n- Improved the readability of raw tabular outputs by converting key metrics, trends, and observations into concise narratives, helping reduce the time spent interpreting data by ~90%.\n- Worked on prompt design and output structuring to generate accurate, concise, and domain-aligned summaries, improving narrative consistency across multiple reporting scenarios.\n- Positioned the project as an AI-assisted reporting tool capable of scaling narrative generation for recurring financial / operational summaries without relying on fully manual drafting.",
+      technologies: ["AI", "Python", "Prompt Engineering"],
+      links: [
+        { type: "Source", href: "https://github.com/Shravanthi-D/SAR-AI-Narrative-Generator.git", icon: <Icons.github className="size-3" /> },
+      ],
+      image: "/fraudlens.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
