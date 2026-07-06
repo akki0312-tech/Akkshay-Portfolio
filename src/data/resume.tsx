@@ -112,7 +112,37 @@ export const DATA = {
       logoUrl: "/ssn-logo.jpg",
       start: "2024",
       end: "2028",
-      description: "**Core Committee Member**\n*ProCode IT SSN* (May 2026 - Present)\n\n**Member of Tech team**\n*SSN-SNUC MUN Society* (May 2026 - Present)\n\n**SSN IEEE Computer Society**\n* **Editorial Team Member** (Mar 2026 - Present)\n* **Student Volunteer** (Sep 2025 - Mar 2026)\n\n**Relevant Coursework:** Problem Solving & Python Programming · Programming in C & Data Structures · Introduction to Web Programming · ObjectOriented Programming using Java · Database Technology · Principles of Software Engineering & Practices · Digital Systems & Microprocessors Design · Introduction to Digital Communication · Pattern Recognition & Machine Learning · Data Analytics & Visualization · Advanced Data Structures & Algorithm Analysis · Signal Processing for Machine Learning · Data Communication & Networks · Computer Organization",
+      clubs: [
+        {
+          title: "Core Committee Member",
+          organization: "ProCode IT SSN",
+          logo: "/procode.png",
+          dates: "May 2026 - Present · 3 mos",
+        },
+        {
+          title: "Member of Tech team",
+          organization: "SSN-SNUC MUN Society",
+          logo: "/munsoc.png",
+          dates: "May 2026 - Present · 3 mos",
+        },
+        {
+          title: "",
+          organization: "SSN IEEE Computer Society",
+          logo: "/ieeecs.png",
+          dates: "11 mos",
+          roles: [
+            {
+              title: "Editorial Team Member",
+              dates: "Mar 2026 - Present · 5 mos",
+            },
+            {
+              title: "Student Volunteer",
+              dates: "Sep 2025 - Mar 2026 · 7 mos",
+            }
+          ]
+        }
+      ],
+      description: "**Relevant Coursework:** Problem Solving & Python Programming · Programming in C & Data Structures · Introduction to Web Programming · ObjectOriented Programming using Java · Database Technology · Principles of Software Engineering & Practices · Digital Systems & Microprocessors Design · Introduction to Digital Communication · Pattern Recognition & Machine Learning · Data Analytics & Visualization · Advanced Data Structures & Algorithm Analysis · Signal Processing for Machine Learning · Data Communication & Networks · Computer Organization",
     },
   ],
   projects: [

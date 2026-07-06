@@ -78,9 +78,37 @@ export default function EducationSection() {
               </div>
             </div>
           </AccordionTrigger>
-          {edu.description && (
-            <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground prose dark:prose-invert">
-              <Markdown>{edu.description}</Markdown>
+          {((edu as any).description || (edu as any).clubs) && (
+            <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
+              {(edu as any).clubs && (edu as any).clubs.length > 0 && (
+                <div className="flex flex-col gap-6 mb-6 mt-4">
+                  {(edu as any).clubs.map((club: any, idx: number) => (
+                    <div key={idx} className="flex items-start gap-4">
+                      <LogoImage src={club.logo} alt={club.organization} />
+                      <div className="flex flex-col min-w-0">
+                        {club.title && <span className="font-semibold text-foreground text-base leading-snug">{club.title}</span>}
+                        <span className={cn(club.title ? "text-sm text-foreground" : "font-semibold text-foreground text-base leading-snug")}>{club.organization}</span>
+                        <span className="text-sm text-muted-foreground mt-0.5">{club.dates}</span>
+                        {club.roles && club.roles.length > 0 && (
+                          <div className="mt-3 flex flex-col gap-4 relative before:absolute before:top-2 before:bottom-2 before:left-[-27px] before:w-[2px] before:bg-border">
+                            {club.roles.map((role: any, ridx: number) => (
+                              <div key={ridx} className="flex flex-col relative before:absolute before:top-[10px] before:left-[-27px] before:w-[12px] before:h-[2px] before:bg-border">
+                                <span className="font-semibold text-foreground text-sm leading-snug">{role.title}</span>
+                                <span className="text-sm text-muted-foreground mt-0.5">{role.dates}</span>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {(edu as any).description && (
+                <div className="prose dark:prose-invert">
+                  <Markdown>{(edu as any).description}</Markdown>
+                </div>
+              )}
             </AccordionContent>
           )}
         </AccordionItem>
