@@ -41,11 +41,12 @@ export default function Page() {
                 </BlurFade>
               )}
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-32 md:size-48 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl?.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${DATA.avatarUrl}` : DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2 shrink-0">
+              <img
+                alt={DATA.name}
+                src={DATA.avatarUrl?.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${DATA.avatarUrl}` : DATA.avatarUrl}
+                className="w-32 md:w-48 h-auto object-cover rounded-xl shadow-lg ring-4 ring-muted"
+              />
             </BlurFade>
           </div>
         </div>

@@ -112,7 +112,7 @@ export const DATA = {
       logoUrl: "/ssn-logo.jpg",
       start: "2024",
       end: "2028",
-      description: "- Core Commitee member at ProCoDe IT SSN\n- Technical Member at SSN MUN Society\n- Editorial Member at IEEECS",
+      description: "- Core Commitee member at ProCoDe IT SSN\n- Technical Member at SSN MUN Society\n- Editorial Member at IEEECS\n\n**Relevant Coursework:** Problem Solving & Python Programming · Programming in C & Data Structures · Introduction to Web Programming · ObjectOriented Programming using Java · Database Technology · Principles of Software Engineering & Practices · Digital Systems & Microprocessors Design · Introduction to Digital Communication · Pattern Recognition & Machine Learning · Data Analytics & Visualization · Advanced Data Structures & Algorithm Analysis · Signal Processing for Machine Learning · Data Communication & Networks · Computer Organization",
     },
   ],
   projects: [

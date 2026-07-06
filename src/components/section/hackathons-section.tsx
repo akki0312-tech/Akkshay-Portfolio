@@ -30,7 +30,7 @@ export default function HackathonsSection() {
               <TimelineConnectItem className="flex items-start justify-center">
                 {hackathon.image ? (
                   <img
-                    src={hackathon.image}
+                    src={hackathon.image.startsWith("/") ? `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${hackathon.image}` : hackathon.image}
                     alt={hackathon.title}
                     className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
                   />
