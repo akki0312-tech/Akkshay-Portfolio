@@ -11,7 +11,8 @@ import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import EducationSection from "@/components/section/education-section";
 import CertificationsSection from "@/components/section/certifications-section";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, MapPinIcon, FileTextIcon } from "lucide-react";
+import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -33,6 +34,29 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY * 1.5}>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4 text-sm font-medium text-muted-foreground">
+                  <div className="flex items-center gap-1.5">
+                    <MapPinIcon className="size-4" />
+                    <span>Bangalore / Chennai</span>
+                  </div>
+                  <div className="hidden sm:block text-muted/30">•</div>
+                  <div className="flex items-center gap-4">
+                    <Link href={DATA.contact.social.GitHub.url} target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
+                      <Icons.github className="size-4" />
+                      <span>GitHub</span>
+                    </Link>
+                    <Link href={DATA.contact.social.LinkedIn.url} target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
+                      <Icons.linkedin className="size-4" />
+                      <span>LinkedIn</span>
+                    </Link>
+                    <Link href={DATA.navbar.find(n => n.label === "Resume")?.href || "/Akkshay-Resume.pdf"} target="_blank" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
+                      <FileTextIcon className="size-4" />
+                      <span>Resume</span>
+                    </Link>
+                  </div>
+                </div>
+              </BlurFade>
               {"intro" in DATA && DATA.intro && (
                 <BlurFade delay={BLUR_FADE_DELAY * 2}>
                   <div className="prose max-w-full text-pretty font-sans text-sm leading-relaxed text-muted-foreground dark:prose-invert md:text-base">
